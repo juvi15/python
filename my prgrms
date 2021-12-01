@@ -1,0 +1,78 @@
+p ordinal
+
+list1=['aravind','aparna']
+print("the original list:\n"+str(list1))
+res=[ord(ele) for sub in list1 for ele in sub]
+print("the ASCII list is:\n" +str(res))
+
+p  vwl
+
+word=input("enter the sentence \n")
+vowels=['a','e','i','o','u',]
+vow=[let for let in word if let in vowels]
+print(vow)
+
+p leap
+import datetime
+date=datetime.date.today()
+currentYear=int(date.strftime("%Y"))
+print("enter the last year")
+endYear=int(input())
+print("list of leap year")
+for year in range(currentYear,endYear):
+    if(year %4==0) and (year%100!=0) or (year%400==0):
+        print(year)
+
+p numbers
+numbers=[34.6,-203.4,44.9,68.3,-12.2,44.6,12.7]
+newlist=[n for n in numbers if n>0]
+print(newlist)
+
+p4
+
+line=input("enter the line:")
+count={}
+sentence= line.split()
+for word in sentence:
+    if word in count:
+        count[word]+=1
+    else:
+        count[word]=1
+for k,v in count.items():
+    print(k,v)
+
+p5
+
+list=[10,20,50,70,140]
+result=[]
+for i in list:
+    if i>100:
+        result.append('over')
+    else:
+        result.append(i)
+    print(result)    
+
+ p6
+
+astr=input("enter the string\n")
+char=input("enter the character \n")
+print("given string:\n",astr)
+print("given character:\n",char)
+res=0
+for i in range(len(astr)):
+    if(astr[i]==char):
+        res=res+1
+print("number of time character is presnt in string:\n",res)
+
+p7
+
+str1=input("enter a string")
+char=str1[0]
+str1=str1.replace(char,'$')
+str1=char+str1[1:]
+print("replaced string",str1)
+
+p8
+
+str1=input("enter a string")
+print("string after swapping first and last character",str1[-1]+str1[1:-1]+str1[0])

@@ -1,0 +1,2 @@
+s='uhhdjf'
+print(s)
